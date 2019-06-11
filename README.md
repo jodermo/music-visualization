@@ -1,7 +1,7 @@
 # MusicVisualisation
 
 ## generic audio visualisations 
-###(needs audio input device)
+### (needs audio input device)
 
  © 2019 - Moritz Petzka - <a href="https://petzka.com" target="_blank">petzka.com</a><br>
  <a href="mailto:info@petzka.com">info@petzka.com</a><br>
