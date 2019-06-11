@@ -1,0 +1,92 @@
+.visualisation-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display: inline-block;
+  overflow: hidden;
+  transition: all .25s ease;
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .visualisation-media-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    transition: all .25s ease;
+    object-fit: cover
+  }
+
+  video, .visualisation-video {
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: block;
+    transition: all .25s ease;
+    object-fit: cover
+  }
+
+  .visualisation-filter-overlay, .visualisation-image-container, .visualisation-canvas-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .25s ease;
+
+    img, canvas {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .visualisation-image-container {
+    mix-blend-mode: multiply;
+    opacity: .75;
+    transition: all 1s linear;
+  }
+
+  .visualisation-canvas-container {
+    mix-blend-mode: screen;
+    opacity: .66;
+  }
+}
+
+.visualisation-information, .visualisation-config{
+  position: fixed;
+  top:50%;
+  left:50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    >*{
+      width: 100%;
+    }
+  }
+}
+.visualisation-information{
+  text-align: center;
+  pointer-events: none;
+  opacity: .5;
+  button{
+    pointer-events: all;
+  }
+}

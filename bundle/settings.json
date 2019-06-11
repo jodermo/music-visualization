@@ -1,0 +1,11 @@
+{
+  "audio-visualisation": {
+    "videoTimeShiftLevel": 0.22,
+    "videoSwitchLevel": 0.27,
+    "imageSwitchLevel": 0.2,
+    "canvasSwitchLevel": 0.5,
+    "filterLevel": 0.5,
+    "help": false,
+    "settings": true
+  }
+}

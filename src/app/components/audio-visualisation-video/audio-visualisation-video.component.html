@@ -1,0 +1,54 @@
+<div class="visualisation-container" #visualisationContainer>
+  <div class="visualisation-media-container" #mediaContainer></div>
+  <div class="visualisation-image-container" #imageContainer></div>
+  <div class="visualisation-canvas-container" #canvasContainer></div>
+  <div class="visualisation-filter-overlay" #filterOverlay></div>
+</div>
+<div class="visualisation-information" *ngIf="config.help || !started">
+  <button *ngIf="started === false" (click)="start()">Start</button>
+  <span *ngIf="started === false"><small>(or press <b>enter</b> to start)</small></span>
+  <span>press <b>c</b> for configuration</span>
+  <small>
+    <b>to close the app</b>,<br>
+    press <b>Alt + F4</b><br>
+  </small>
+</div>
+<div class="visualisation-config" *ngIf="started && config.settings">
+  <h2>VFX Configuration</h2>
+  <p>effect sensibility (0=off, 1=max)</p>
+  <label>
+    <span>Video Cuts</span>
+    <input type="number" step=".01" min="0" max="1" [(ngModel)]="config.videoSwitchLevel" (change)="configChange()"/>
+  </label>
+  <label>
+    <span>Time Shift</span>
+    <input type="number" step=".01" min="0" max="1" [(ngModel)]="config.videoTimeShiftLevel" (change)="configChange()"/>
+  </label>
+  <label>
+    <span>Image Effects</span>
+    <input type="number" step=".01" min="0" max="1" [(ngModel)]="config.imageSwitchLevel" (change)="configChange()"/>
+  </label>
+  <label>
+    <span>Random Symbols</span>
+    <input type="number" step=".01" min="0" max="1" [(ngModel)]="config.canvasSwitchLevel" (change)="configChange()"/>
+  </label>
+  <label>
+    <span>Color Effects</span>
+    <input type="number" step=".01" min="0" max="1" [(ngModel)]="config.filterLevel" (change)="configChange()"/>
+  </label>
+  <label>
+    <small>
+      <b>to close the app</b>,<br>
+      press <b>Alt + F4</b><br>
+    </small>
+  </label>
+  <label>
+    <button (click)="config.settings = false">close</button>
+    <span>or press "c"</span>
+  </label>
+
+</div>
+<div class="copyright">
+  MoFX Visuals © 2019 by Moritz Petzka [<a href="https://petzka.com" target="_blank">petzka.com</a>]
+</div>
+
