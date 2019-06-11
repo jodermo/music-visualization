@@ -42,7 +42,7 @@ Run `npm run exe` for compiling the `pkg` executable.
 
 now, `MusicVisualization.exe` is inside the `/bundle` directory.
 
-this will execute the server and automatically start the page `localhost:3000` with Google Chrome in kiosk mode, when Chrome is installed.
+MusicVisualization.exe will execute the server and automatically start the page `localhost:3000` with Google Chrome in kiosk mode, when Chrome is installed.
 
 ## Demo of an older (non node) version:  <a href="http://visual.mucke.online" target="_blank">visual.mucke.online</a>
 
