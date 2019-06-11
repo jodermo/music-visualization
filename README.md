@@ -1,6 +1,6 @@
-# MusicVisualisation
+# MusicVisualization
 
-## generic audio visualisations 
+## generic audio visualizations 
 ### (needs audio input device)
 
  © 2019 - Moritz Petzka - <a href="https://petzka.com" target="_blank">petzka.com</a><br>
