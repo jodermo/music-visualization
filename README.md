@@ -8,17 +8,34 @@
  
  ![preview image](app_preview.jpg?raw=true "Preview")
  
-### USP: mixing 4 layers randomly on audio input<br>
-• random video files<br>
-• random image files<br>
-• canvas layer with random drawings<br>
-• random color layer with css blend effects<br>
+### USP: mixing 4 layers randomly on audio input [with different reactions]<br>
+• random video files [speed switchs, jumps and cuts]<br>
+• random image files [blend mode and rotation]<br>
+• canvas layer with random drawings [position and amount of symbols]<br>
+• HTML/CSS layer [color and blend mode]<br>
 
 #### + dynamic settings for layers (press c in app)
 
-## Available as Windows executable (.exe)
+## Get started
 
-## Demo:  <a href="http://visual.mucke.online" target="_blank">visual.mucke.online</a>
+### I. Install Angular-App
+Run `npm install` for installing node dependencies.
+Run `ng build` to build the project (now, all files needed, are in `/bundle` directory).
+
+### II. Install Server-App (/bundle)
+Run `cd bundle` to enter the bundle directory.
+Run `npm install` for installing node dependencies.
+
+### III. Run App (localhost:3000)
+Run `npm run start` for starting the app server on port 3000.
+
+## Also available as Windows executable (/bundle/MusicVisualization.exe)
+Run `cd bundle` to enter the bundle directory.
+Run `npm run exe` for compiling the `pkg` executable.
+now, you have `MusicVisualization.exe` inside the `/bundle` directory.
+this will execute the server and automatically start the page `localhost:3000` with Google Chrome in kiosk mode, when Chrome is installed.
+
+## Demo of an older (non node) version:  <a href="http://visual.mucke.online" target="_blank">visual.mucke.online</a>
 
 
 
