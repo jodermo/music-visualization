@@ -40,7 +40,7 @@ Run `cd bundle` to enter the bundle directory.
 
 Run `npm run exe` for compiling the `pkg` executable.
 
-now, you have `MusicVisualization.exe` inside the `/bundle` directory.
+now, `MusicVisualization.exe` is inside the `/bundle` directory.
 
 this will execute the server and automatically start the page `localhost:3000` with Google Chrome in kiosk mode, when Chrome is installed.
 
